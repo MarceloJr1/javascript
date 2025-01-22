@@ -3,7 +3,7 @@ let numerosecreto = 29;
 let chute = prompt("escolha um número de 1 a 30");
 
 if(numerosecreto == chute) {
-    console.log("isso aí! você é muito esperto.");
+    alert("isso aí! você é muito esperto.");
 } else {
-    console.log("Número errado :(");
+    alert("Número errado :(");
 }
