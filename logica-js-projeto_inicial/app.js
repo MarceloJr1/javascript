@@ -1,9 +1,24 @@
 alert("bem vindo ao jogo do numero secreto!");
 let numerosecreto = 29;
-let chute = prompt("escolha um número de 1 a 30");
+let chute;
+let tentativas = 1;
+//enquanto 
 
-if(numerosecreto == chute) {
-    alert("isso aí! você é muito esperto.");
-} else {
-    alert("Número errado :(");
-}
+while (chute != numerosecreto) {
+    chute = prompt("escolha um número de 1 a 30");
+
+    if(numerosecreto == chute) {
+    alert(`Isso aí! você é muito esperto. ${chute}, você precisou de um total de ${tentativas} tentativas`);
+    } else {
+        if(numerosecreto > chute){
+            alert(`O numero secreto é maior que ${chute}`);
+            
+        } else {
+            alert(`O número secreto é menor que ${chute}`);
+        }
+        tentativas++
+    }
+ }
+
+
+//O uso de ${} é possível graças às template literals, que permitem a interpolação de strings e a inclusão de expressões em strings.
