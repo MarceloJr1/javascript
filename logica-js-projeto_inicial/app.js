@@ -21,10 +21,12 @@ while (chute != numerosecreto) {
     }
  }
 
+ let tentativa = tentativas > 1 ? `tentativas` : `tentativa`;
+
 if(tentativas > 1) {
     alert(`Isso aí! você é muito esperto. ${chute}, você precisou de um total de ${tentativas} tentativas`);
 } else{
-    alert(`Isso aí! você é muito esperto. ${chute}, você precisou de um total de ${tentativas} tentativa`);
+    alert(`Isso aí! você é muito esperto. ${chute}, você precisou de um total de ${tentativas} ${tentativa}`);
 }
     
 
